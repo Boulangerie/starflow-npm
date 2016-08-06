@@ -1,0 +1,47 @@
+{
+  "name": "starflow-npm",
+  "version": "0.1.0",
+  "description": "Starflow plugin that provides executables for npm steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.spec.js",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "starflow",
+    "starflowplugin",
+    "npm",
+    "workflow"
+  ],
+  "author": {
+    "name": "Benoit Ruiz",
+    "email": "benoit.ruiz01@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Yannick Galatol"
+    }
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Boulangerie/starflow-npm.git"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "peerDependencies": {
+    "starflow": "~0.1.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1",
+    "starflow": "^0.1.2",
+    "tmp": "0.0.28"
+  }
+}
